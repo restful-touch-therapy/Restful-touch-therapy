@@ -33,7 +33,7 @@ section{padding:85px 8%}.intro{max-width:760px;margin:auto;text-align:center}.ca
 </div>
 
 <form action="https://formspree.io/f/mljdqwjd" method="POST" style="background:white;padding:30px;border-radius:18px;margin-top:30px;">
-<input type="hidden" name="_next" value="https://restful-touch-therapy.co.uk/thank-you.html">
+
 <label><strong>Your name</strong></label>
 <input type="text" name="name" required style="width:100%;padding:14px;margin:8px 0 20px;border:1px solid #ccc;border-radius:8px;">
 
@@ -71,5 +71,28 @@ section{padding:85px 8%}.intro{max-width:760px;margin:auto;text-align:center}.ca
 </section>
   <section id="contact"><div class="contact"><div class="contact-card"><div class="eyebrow">Contact</div><h2>Get in touch</h2><p><strong>Damian</strong><br>Restful Touch Therapy<br>Runcorn & surrounding areas</p></div><div class="contact-card"><p><strong>Telephone</strong><br><a href="tel:07860380917">07860 380917</a></p><p><strong>Email</strong><br><a href="mailto:damianjagriffiths@gmail.com">damianjagriffiths@gmail.com</a></p><p><strong>Service</strong><br>Home visits only</p></div></div></section>
 <footer>© 2026 Restful Touch Therapy · Massage Therapy by Damian</footer>
+  <script>
+const form = document.querySelector('form');
+
+form.addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if (response.ok) {
+    window.location.href = '/thank-you.html';
+  } else {
+    alert('Sorry, there was a problem sending your booking request. Please try again.');
+  }
+});
+  </script>
 </body>
 </html>
