@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Request Received | Restful Touch Therapy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f3ec;
+    color: #26332f;
+    text-align: center;
+}
+
+.container {
+    max-width: 650px;
+    margin: 80px auto;
+    padding: 50px 25px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.logo span {
+    color: #b89563;
+}
+
+.card {
+    background: white;
+    padding: 45px 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(30,40,35,.08);
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 42px;
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.tick {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #26332f;
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+Restful Touch <span>Therapy</span>
+</div>
+
+<div class="card">
+
+<div class="tick">✓</div>
+
+<h1>Thank you</h1>
+
+<p><strong>Your massage request has been received.</strong></p>
+
+<p>
+Thank you for contacting Restful Touch Therapy.
+Damian will review your requested treatment, date and time and will contact you to confirm your appointment.
+</p>
+
+<p>
+Please remember that your appointment is not confirmed until you receive confirmation from Damian.
+</p>
+
+<a class="btn" href="/">Return to Restful Touch Therapy</a>
+
+</div>
+</div>
+
+</body>
+</html>
